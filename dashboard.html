@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Bengkel Store</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="style/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="page-dashboard">
+      <div class="d-flex" id="wrapper" data-aos="fade-right">
+        <!-- sidebar -->
+        <div class="border-right" id="sidebar-wrapper">
+          <div class="sidebar-heading text-center">
+            <img src="/images/dashboard-store-logo.svg" alt="" class="my-4" />
+          </div>
+
+          <!-- tampilan menu siddebar -->
+          <div class="list-group list-group-flush">
+            <a
+              href="/dashboard.html"
+              class="list-group-item list-group-item-action active"
+            >
+              Dashboard Custom
+            </a>
+            <a
+              href="/dashboard-products.html"
+              class="list-group-item list-group-item-action"
+            >
+              My Products
+            </a>
+            <a
+              href="/dashboard-transactions.html"
+              class="list-group-item list-group-item-action"
+            >
+              Transactions
+            </a>
+            <a
+              href="/dashboard-settings.html"
+              class="list-group-item list-group-item-action"
+            >
+              Store Settings
+            </a>
+            <a
+              href="/dashboard-account.html"
+              class="list-group-item list-group-item-action"
+            >
+              My Account
+            </a>
+            <a
+              href="/index.html"
+              class="list-group-item list-group-item-action"
+            >
+              Sign Out
+            </a>
+          </div>
+          <!-- akhir menu siddebar -->
+        </div>
+
+        <!-- page content -->
+        <div id="page-content-wrapper">
+          <nav
+            class="navbar navbar-expand-lg navbar-light navbar-store fixed-top"
+            data-aos="fade-down"
+            aria-label="navbar"
+          >
+            <div class="container-fluid">
+              <button
+                class="btn btn-secondary d-md-none mr-auto mr-2"
+                id="menu-toggle"
+              >
+                &laquo; Menu
+              </button>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Dekstop menu -->
+                <ul class="navbar-nav d-none d-lg-flex ml-auto">
+                  <li class="nav-item dropdown">
+                    <a
+                      href="#"
+                      class="nav-link"
+                      id="#navbarDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                    >
+                      <img
+                        src="/images/icon-user.png"
+                        alt=""
+                        class="rounded-circle mr-2 profile-picture"
+                      />
+
+                      Hi, Lijanfri Sipangkar
+                    </a>
+                    <div class="dropdown-menu">
+                      <a href="/dashboard.html" class="dropdown-item"
+                        >Dashboard</a
+                      >
+                      <a href="/dashboard-account.html" class="dropdown-item"
+                        >Settings</a
+                      >
+                      <div class="dropdown-divider"></div>
+                      <a href="/" class="dropdown-item">Log Out</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link d-inline-block mt-2">
+                      <img src="/images/icon-cart-filled.svg" alt="" />
+                      <div class="card-badge">3</div>
+                    </a>
+                  </li>
+                </ul>
+                <!-- Mobile Menu -->
+                <ul class="navbar-nav d-block d-lg-none">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Hi, Lijanfri</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link d-inline-block">Cart</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <!-- section content -->
+          <div
+            class="section-content section-dashboard-home"
+            data-aos="fade-up"
+          >
+            <div class="container-fluid">
+              <div class="dashboard-heading">
+                <h2 class="dashboard-title">Dashboard</h2>
+                <p class="dashboard-subtitle">Look what you have made today!</p>
+              </div>
+              <div class="dashboard-content">
+                <!-- 3 tabel tampilan dashboard -->
+                <div class="row">
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card mb-2">
+                      <div class="card-body">
+                        <div class="dashboard-card-title">Semua Pesanan</div>
+                        <div class="row">
+                          <div class="col-9 col-lg-9 dashboard-card-subtitle">
+                            1
+                          </div>
+                          <div class="col-1 col-lg-1 px-1 text-center">
+                            <a href="">
+                              <img
+                                src="/images/dashboard-all-order.svg"
+                                alt=""
+                                class="px-1"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card mb-2">
+                      <div class="card-body">
+                        <div class="dashboard-card-title">Pending</div>
+                        <div class="row">
+                          <div class="col-9 col-lg-9 dashboard-card-subtitle">
+                            2
+                          </div>
+                          <div class="col-1 col-lg-1 px-1 text-center">
+                            <a href="">
+                              <img
+                                src="/images/dashboard-pending.svg"
+                                alt=""
+                                class="px-1"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card mb-2">
+                      <div class="card-body">
+                        <div class="dashboard-card-title">Pembayaran</div>
+                        <div class="row">
+                          <div class="col-9 col-lg-9 dashboard-card-subtitle">
+                            3
+                          </div>
+                          <div class="col-1 col-lg-1 px-1 text-center">
+                            <a href="">
+                              <img
+                                src="/images/dashboard-payment.svg"
+                                alt=""
+                                class="px-1"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      git init
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card mb-2">
+                      <div class="card-body">
+                        <div class="dashboard-card-title">Sedang Dikirim</div>
+                        <div class="row">
+                          <div class="col-9 col-lg-9 dashboard-card-subtitle">
+                            4
+                          </div>
+                          <div class="col-1 col-lg-1 px-1 text-center">
+                            <a href="">
+                              <img
+                                src="/images/dashboard-dikirim.svg"
+                                alt=""
+                                class="px-1"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card mb-2">
+                      <div class="card-body">
+                        <div class="dashboard-card-title">
+                          Pesanan Dibatalkan
+                        </div>
+                        <div class="row">
+                          <div class="col-9 col-lg-9 dashboard-card-subtitle">
+                            5
+                          </div>
+                          <div class="col-1 col-lg-1 px-1 text-center">
+                            <a href="">
+                              <img
+                                src="/images/dashboard-cancelled.svg"
+                                alt=""
+                                class="px-1"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card mb-2">
+                      <div class="card-body">
+                        <div class="dashboard-card-title">Selesai</div>
+                        <div class="row">
+                          <div class="col-9 col-lg-9 dashboard-card-subtitle">
+                            6
+                          </div>
+                          <div class="col-1 col-lg-1 px-1 text-center">
+                            <a href="">
+                              <img
+                                src="/images/dashboard-completed.svg"
+                                alt=""
+                                class="px-1"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- isi tabel recent transaksi -->
+                <div class="row mt-3">
+                  <div class="col-12 mt-2">
+                    <h5 class="mb-3">Semua Pesanan</h5>
+
+                    <table class="table table-light table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">Keterangan</th>
+                          <th scope="col">Nama</th>
+                          <th scope="col">Email</th>
+                          <th scope="col">Waktu</th>
+                        </tr>
+                      </thead>
+                      <tbody class="table-group-divider-dark"></tbody>
+                      <tbody>
+                        <tr>
+                          <th scope="row">PDG-454545</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">PYM-869898</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">DVL-869898</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CNL-869898</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TRX-869898</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+
+                        <!-- <tr>
+                          <th scope="row">3</th>
+                          <td colspan="2">Larry the Bird</td>
+                          <td>@twitter</td>
+                        </tr> -->
+                      </tbody>
+                    </table>
+
+                    <a
+                      href="/dashboard-transactions.html"
+                      class="card card-list d-block"
+                      style="display: none"
+                    >
+                      <div class="card-body display-none" style="display: none">
+                        <div class="row">
+                          <div class="col-md-1">
+                            <img
+                              src="/images/dashboard-icon-product-1.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="col-md-4">Sirup Marzan</div>
+                          <div class="col-md-3">Angga Risky</div>
+                          <div class="col-md-3">05 February. 2024</div>
+                          <div class="col md-1 d-none d-md-block">
+                            <img
+                              src="/images/dashboard-arrow-right.svg"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.slim.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+    </script>
+  </body>
+</html>
